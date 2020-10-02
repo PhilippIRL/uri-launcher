@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         String uri = uriInput.getText().toString();
 
         if(uri.length() == 0) {
-            AppInfo info = createDummyAppInfo("No URI", "Please enter your URI in the text field above");
+            AppInfo info = createDummyAppInfo(getString(R.string.empty_title), getString(R.string.empty_text));
             activityList.setAdapter(new ActivityAdapter(Collections.singletonList(info), this));
             return;
         }
@@ -88,14 +88,14 @@ public class MainActivity extends AppCompatActivity {
             }
 
             if(infos.size() == 0) {
-                AppInfo info = createDummyAppInfo("Nothing found", "No app was found that can handle this URI");
+                AppInfo info = createDummyAppInfo(getString(R.string.noResults_title), getString(R.string.noResults_text));
                 activityList.setAdapter(new ActivityAdapter(Collections.singletonList(info), this));
             } else {
                 activityList.setAdapter(new ActivityAdapter(infos, this));
             }
 
         } else {
-            AppInfo info = createDummyAppInfo("Invalid URI", "The entered URI is invalid");
+            AppInfo info = createDummyAppInfo(getString(R.string.invalid_title), getString(R.string.invalid_text));
             activityList.setAdapter(new ActivityAdapter(Collections.singletonList(info), this));
         }
     }

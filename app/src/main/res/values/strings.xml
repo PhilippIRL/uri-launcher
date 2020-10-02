@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">URI Launcher</string>
+    <string name="empty_title">No URI</string>
+    <string name="empty_text">Please enter your URI in the text field above</string>
+    <string name="noResults_title">Nothing found</string>
+    <string name="noResults_text">No app was found that can handle this URI</string>
+    <string name="invalid_title">Invalid URI</string>
+    <string name="invalid_text">The entered URI is invalid</string>
 </resources>

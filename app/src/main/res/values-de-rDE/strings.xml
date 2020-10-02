@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">URI Launcher</string>
+    <string name="empty_title">Keine URI</string>
+    <string name="empty_text">Bitte gib eine URI in das Textfeld oben ein</string>
+    <string name="noResults_title">Nichts gefunden</string>
+    <string name="noResults_text">Es wurde keine App gefunden, die diese URI verarbeiten kann</string>
+    <string name="invalid_title">Ungültige URI</string>
+    <string name="invalid_text">Die eingegebene URI ist ungültig</string>
+</resources>
